@@ -20,7 +20,7 @@ int main(void)
  { 
 	delay_init();	    	 //延时函数初始化
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2); //设置NVIC中断分组2:2位抢占优先级，2位响应优先级	
-	USART3_Init(19200);  //初始化串口2波特率为4800
+	USART3_Init(19200);  //初始化串口2波特率为19200
 	LED_Init();         	//LED初始化	
   TIM1_PWM_Init(45000,0);	 //不分频。PWM频率=72000/(45000+1)=1.6Khz
  // TIM_SetCompare1(TIM1,20000);
